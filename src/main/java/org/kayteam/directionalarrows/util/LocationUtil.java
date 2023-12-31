@@ -1,9 +1,6 @@
-package org.kayteam.npcinteractions.util;
+package org.kayteam.directionalarrows.util;
 
 import org.bukkit.Location;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Entity;
-import org.bukkit.util.Vector;
 
 public class LocationUtil {
 

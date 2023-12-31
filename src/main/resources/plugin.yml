@@ -1,4 +1,7 @@
 name: directional-arrows
 version: '${project.version}'
-main: org.kayteam.directionalarrows.Directional_arrows
-api-version: '1.20'
+main: org.kayteam.directionalarrows.DirectionalArrows
+api-version: '1.13'
+commands:
+  directionalarrows:
+    description: Main directionalarrows command

@@ -1,17 +1,26 @@
 package org.kayteam.directionalarrows;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.kayteam.directionalarrows.command.MainCommand;
 
-public final class Directional_arrows extends JavaPlugin {
+import java.util.Objects;
+
+public final class DirectionalArrows extends JavaPlugin {
+
+    private static DirectionalArrows instance;
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        instance = this;
+        Objects.requireNonNull(getCommand("directionalarrows")).setExecutor(new MainCommand());
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+    }
+
+    public static DirectionalArrows getInstance() {
+        return instance;
     }
 }
